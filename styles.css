@@ -36,13 +36,19 @@ p {
 .nav-item {
   margin-left: 30px;
 }
+.nav-link:hover {
+  color: blueviolet;
+}
+.nav-link.active:hover {
+  color: blueviolet;
+}
 .row {
   margin: 0 auto;
 }
 .introduction {
   position: relative;
-  margin: 0 auto;
-  margin-top: 185px;
+
+  margin-top: 190px;
   margin-left: 25px;
   padding: 0;
 }
@@ -57,14 +63,17 @@ p {
 .black-button {
   color: white;
   background-color: black;
+  border: 2px solid black;
   border-radius: 0.375rem;
-  transition: ease-in-out 0.15s;
+  padding: 5px 45px;
+  margin-left: 5px;
+  transition: border-color 0.5s, background-color 0.25s, color 0.5s;
 }
-.black-button:hover {
-  color: white;
-  background-color: black;
-  border: 1px solid blueviolet;
-  transform: scale(1.05);
+.black-button:hover,
+.black-button:focus {
+  color: black;
+  background-color: #fafafa;
+  border: 2px solid black;
 }
 
 #smiley {
@@ -81,7 +90,6 @@ p {
 .portrait-element {
   width: 415px;
   position: relative;
-  margin: 0 auto;
   margin-top: 140px;
   padding: 0;
 }
@@ -97,7 +105,6 @@ p {
   background-color: #e8e7e5;
   width: 415px;
   height: 285px;
-  margin: 0 auto;
 }
 
 @media (max-width: 992px) {
