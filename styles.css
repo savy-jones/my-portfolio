@@ -48,7 +48,7 @@ p {
 .introduction {
   position: relative;
 
-  margin-top: 190px;
+  margin-top: 200px;
   margin-left: 25px;
   padding: 0;
 }
@@ -99,7 +99,7 @@ p {
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-top: -256px;
+  margin-top: -246px;
 }
 #rectangle {
   background-color: #e8e7e5;
