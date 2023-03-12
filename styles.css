@@ -1,24 +1,57 @@
+:root {
+  --highlight-color: blueviolet;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+
 h1 {
   font-family: "Libre Bodoni", serif;
   font-weight: 700;
   font-style: italic;
   font-size: calc(2.375rem + 1.5vw);
 }
-h2 {
-  font-family: "Roboto", sans-serif;
-}
+
 p {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
-.introduction {
-  margin-top: 40px;
+button:hover {
+  cursor: pointer;
 }
 
+.navbar-brand {
+  color: var(--highlight-color);
+}
+.navbar {
+  border-top: 1rem solid black;
+  border-bottom: 0.5rem solid black;
+}
+
+.navbar-light {
+  background-color: #e6e7ea;
+}
+.navbar-nav {
+  text-align: right;
+}
+.nav-item {
+  margin-left: 30px;
+}
+.introduction {
+  margin-top: 150px;
+}
+.introduction p {
+  margin-left: 4px;
+}
+
+#smiley {
+  margin-right: 5px;
+  font-size: 22px;
+}
 #waving-icon {
   margin-right: 8px;
 }
 #arrow {
-  margin-left: 4px;
+  margin-left: 8px;
 }
