@@ -3,7 +3,6 @@
 }
 
 body {
-  background-color: #fafafa;
   font-family: "Roboto", sans-serif;
 }
 
@@ -14,57 +13,58 @@ h1 {
   font-size: calc(2.375rem + 1.5vw);
   margin-bottom: 10px;
 }
-
 p {
   font-weight: 400;
 }
-
+a {
+  color: blueviolet;
+}
+a:hover {
+  color: #a96bdb;
+  cursor: pointer;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.navbar-brand {
-  color: var(--highlight-color);
-}
-.navbar {
-  border-top: 1rem solid black;
-  border-bottom: 0.5rem solid black;
-}
-
-.navbar-light {
-  background-color: #e8e7e5;
-}
-.navbar-nav {
-  text-align: right;
-}
-.nav-item {
-  margin-left: 30px;
-}
-.nav-link:hover {
-  color: blueviolet;
-}
-.nav-link.active:hover {
-  color: blueviolet;
-}
-.row {
-  justify-content: center;
-}
-.introduction {
-  position: relative;
-  width: 450px;
-  margin: 0 auto;
-
-  margin-top: 200px;
-}
-.introduction p {
-  margin-left: 5px;
-  opacity: 0.8;
+.about-title,
+.projects-title {
+  background: #e8e7e5;
   margin-bottom: 30px;
+  margin-top: -7px;
+  padding: 0px 70px 15px;
 }
-.fa-desktop {
-  margin-right: 4px;
+.about-title p {
+  opacity: 0.8;
 }
+
+.border-box-container2 {
+  max-width: 100%;
+  background: linear-gradient(270deg, #6124f4, #e13eac, #6124f4, #e13eac) 30%;
+  padding: 10px;
+}
+
+.border-box2 {
+  max-width: 100%px;
+  padding: 10px;
+  background: #fafafa;
+}
+.border-box2-outside-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  background: linear-gradient(
+      270deg,
+      rgba(97, 36, 244, 0.6),
+      rgba(224, 60, 170, 0.6),
+      rgba(97, 36, 244, 0.6),
+      rgba(225, 62, 172, 0.6)
+    )
+    30%;
+  padding: 20px;
+}
+
 .black-button {
   color: white;
   background-color: black;
@@ -81,32 +81,64 @@ ul {
   border: 2px solid black;
 }
 
+.fa-desktop {
+  margin-right: 4px;
+}
+.fa-wand-magic-sparkles {
+  font-size: 40px;
+  margin-left: 8px;
+}
+.introduction {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+
+  margin-top: 200px;
+}
+.introduction p {
+  margin-left: 5px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.italicize {
+  font-family: "Libre Bodoni", serif;
+  font-style: italic;
+}
+.navbar {
+  border-top: 1rem solid black;
+  border-bottom: 0.5rem solid black;
+}
+.navbar-brand {
+  color: var(--highlight-color);
+}
+.nav-item {
+  margin-left: 30px;
+}
+.navbar-light {
+  background-color: #e8e7e5;
+}
+.nav-link:hover {
+  color: blueviolet;
+}
+.nav-link.active:hover {
+  color: blueviolet;
+}
+.navbar-nav {
+  text-align: right;
+}
 .pattern {
   background-image: url(/images/halftone-746402_1280.png);
   background-size: 860px 414px;
   background-repeat: repeat-x;
   margin-top: -33px;
 }
-
-.rectangle-blend {
-  background-color: #e8e7e5;
-  margin-top: 60px;
-  height: 420px;
-  width: 100%;
-  mix-blend-mode: lighten;
+.project-descriptions h2 {
+  font-family: "Libre Bodoni", serif;
 }
-
-#smiley {
-  margin-right: 5px;
-  font-size: 22px;
+.projects-title {
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
-#waving-icon {
-  margin-right: 8px;
-}
-#arrow {
-  margin-left: 8px;
-}
-
 .portrait-element {
   width: 450px;
   position: relative;
@@ -114,13 +146,35 @@ ul {
 
   margin-top: 140px;
 }
+.rectangle-blend {
+  background-color: #e8e7e5;
+  margin-top: 60px;
+  height: 420px;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+.row {
+  justify-content: center;
+}
+.text-muted {
+  opacity: 0.8;
+}
 
+#about-list {
+  margin-top: 45px;
+}
+#about-list p {
+  margin-left: 41px;
+  margin-bottom: 32px;
+}
+#arrow {
+  margin-left: 8px;
+}
 #home {
   padding-left: 70px;
   padding-right: 70px;
   max-width: 1250px;
 }
-
 #portrait {
   width: 270px;
   height: auto;
@@ -133,25 +187,18 @@ ul {
   width: 415px;
   height: 285px;
 }
-
-.about-title {
-  background: #e8e7e5;
-  margin-bottom: 30px;
-  margin-top: -7px;
-  padding: 0px 70px 15px;
-}
-.about-title p {
-  opacity: 0.8;
-}
-#about-list {
-  font-size: 26px;
-  font-weight: bold;
-  margin-top: 45px;
+#smiley {
+  margin-right: 5px;
+  font-size: 22px;
 }
 #universal-design {
   width: max-content;
   filter: brightness(0.98);
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+#waving-icon {
+  margin-right: 8px;
 }
 
 @media (max-width: 1016px) {
