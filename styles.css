@@ -47,7 +47,7 @@ ul {
 
 .border-box2 {
   max-width: 100%px;
-  padding: 10px;
+
   background: #fafafa;
 }
 .border-box2-outside-container {
@@ -134,6 +134,10 @@ ul {
 }
 .project-descriptions h2 {
   font-family: "Libre Bodoni", serif;
+}
+.project-image {
+  display: flex;
+  width: 300px;
 }
 .projects-title {
   padding-top: 30px;
