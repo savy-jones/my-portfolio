@@ -4,6 +4,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  /*background: #fafafa;*/
 }
 
 h1 {
@@ -32,37 +33,10 @@ ul {
 .projects-title {
   background: #e8e7e5;
   margin-bottom: 30px;
-  margin-top: -7px;
-  padding: 0px 70px 15px;
+  padding: 25px 0px 15px;
 }
 .about-title p {
   opacity: 0.8;
-}
-
-.border-box-container2 {
-  max-width: 100%;
-  background: linear-gradient(270deg, #6124f4, #e13eac, #6124f4, #e13eac) 30%;
-  padding: 10px;
-}
-
-.border-box2 {
-  max-width: 100%px;
-
-  background: #fafafa;
-}
-.border-box2-outside-container {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  background: linear-gradient(
-      270deg,
-      rgba(97, 36, 244, 0.6),
-      rgba(224, 60, 170, 0.6),
-      rgba(97, 36, 244, 0.6),
-      rgba(225, 62, 172, 0.6)
-    )
-    30%;
-  padding: 20px;
 }
 
 .black-button {
@@ -81,6 +55,14 @@ ul {
   border: 2px solid black;
 }
 
+.container {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 75rem;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 .fa-desktop {
   margin-right: 4px;
 }
@@ -89,11 +71,8 @@ ul {
   margin-left: 8px;
 }
 .introduction {
-  position: relative;
-  width: 450px;
+  min-width: 335px;
   margin: 0 auto;
-
-  margin-top: 200px;
 }
 .introduction p {
   margin-left: 5px;
@@ -128,7 +107,7 @@ ul {
 }
 .pattern {
   background-image: url(/images/halftone-746402_1280.png);
-  background-size: 860px 414px;
+  background-size: 860px 470px;
   background-repeat: repeat-x;
   margin-top: -33px;
 }
@@ -137,18 +116,14 @@ ul {
 }
 .project-image {
   display: flex;
-  width: 300px;
+  width: fit-content;
 }
 .projects-title {
   padding-top: 30px;
   padding-bottom: 25px;
 }
 .portrait-element {
-  width: 450px;
-  position: relative;
   margin: 0 auto;
-
-  margin-top: 140px;
 }
 .rectangle-blend {
   background-color: #e8e7e5;
@@ -157,11 +132,16 @@ ul {
   width: 100%;
   mix-blend-mode: lighten;
 }
-.row {
-  justify-content: center;
-}
 .text-muted {
   opacity: 0.8;
+}
+
+.title-container {
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 75rem;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 255, 17);
 }
 
 #about-list {
@@ -175,16 +155,17 @@ ul {
   margin-left: 8px;
 }
 #home {
-  padding-left: 70px;
-  padding-right: 70px;
-  max-width: 1250px;
+  margin-top: 200px;
 }
 #portrait {
-  width: 270px;
-  height: auto;
+  max-width: 260px;
+
   display: block;
   margin: 0 auto;
-  margin-top: -246px;
+
+  border-radius: 150px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
 }
 #rectangle {
   background-color: #e8e7e5;
@@ -205,5 +186,8 @@ ul {
   margin-right: 8px;
 }
 
-@media (max-width: 1016px) {
+@media (max-width: 787px) {
+  .portrait-element {
+    margin-bottom: 36px;
+  }
 }
