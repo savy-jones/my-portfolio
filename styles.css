@@ -4,7 +4,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  /*background: #fafafa;*/
 }
 
 h1 {
@@ -53,6 +52,48 @@ ul {
   color: black;
   background-color: #fafafa;
   border: 2px solid black;
+}
+.card-1 {
+  background-image: url(images/CIRO-project.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-2 {
+  background-image: url(images/hotsprings_project.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3 {
+  background-image: url(images/world-clock.png);
+  background-size: cover;
+  background-position: center;
+}
+.card-4 {
+  background-image: url(images/weatherapp-project.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card-5 {
+  background-image: url(images/sailing-project.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.card-6 {
+  background-image: url(images/#);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  color: white;
+  padding: 1.5em;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.5) 20%,
+    hsl(0 0% 0% / 1)
+  );
 }
 
 .container {
@@ -133,7 +174,6 @@ ul {
   mix-blend-mode: lighten;
 }
 .text-muted {
-  opacity: 0.8;
 }
 
 .title-container {
@@ -177,10 +217,9 @@ ul {
   font-size: 22px;
 }
 #universal-design {
-  width: max-content;
-  filter: brightness(0.98);
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 200px;
+  padding: 0 30px;
 }
 #waving-icon {
   margin-right: 8px;
@@ -189,5 +228,11 @@ ul {
 @media (max-width: 787px) {
   .portrait-element {
     margin-bottom: 36px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
