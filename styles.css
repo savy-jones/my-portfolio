@@ -54,29 +54,29 @@ ul {
   border: 2px solid black;
 }
 .card-1 {
-  background-image: url(images/CIRO-project.jpeg);
+  background-image: url(images/ciro-website.jpeg);
   background-size: cover;
   background-position: center;
 }
 
 .card-2 {
-  background-image: url(images/hotsprings_project.jpeg);
+  background-image: url(images/hotsprings-project.jpeg);
   background-size: cover;
   background-position: center;
 }
 
 .card-3 {
-  background-image: url(images/world-clock.png);
+  background-image: url(images/world-clock.jpeg);
   background-size: cover;
   background-position: center;
 }
 .card-4 {
-  background-image: url(images/weatherapp-project.jpeg);
+  background-image: url(images/weather-app.jpeg);
   background-size: cover;
   background-position: center;
 }
 .card-5 {
-  background-image: url(images/sailing-project.jpeg);
+  background-image: url(images/sailing-website.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -94,6 +94,12 @@ ul {
     hsl(20 0% 0% / 0.5) 20%,
     hsl(0 0% 0% / 1)
   );
+}
+.card-content .black-button {
+  border: 2px solid white;
+  display: block;
+  margin: 0 auto;
+  max-width: 13rem;
 }
 
 .container {
@@ -183,7 +189,10 @@ ul {
   margin: 0 auto;
   border: 1px solid rgb(0, 255, 17);
 }
-
+#about {
+  padding-top: 90px;
+  margin-top: -90px;
+}
 #about-list {
   margin-top: 45px;
 }
