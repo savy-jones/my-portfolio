@@ -29,7 +29,8 @@ ul {
   padding: 0;
 }
 .about-title,
-.projects-title {
+.projects-title,
+.contact-title {
   background: #e8e7e5;
   margin-bottom: 30px;
   padding: 25px 0px 15px;
@@ -193,6 +194,9 @@ ul {
   background-repeat: repeat-x;
   margin-top: -33px;
 }
+.project-cards {
+  margin-bottom: 175px;
+}
 .project-cards a {
   text-decoration: none;
   color: black;
@@ -233,7 +237,8 @@ ul {
   padding-top: 90px;
   margin-top: -90px;
 }
-#about-list {
+#about-list,
+#contact-list {
   margin-top: 45px;
 }
 #about-list p {
