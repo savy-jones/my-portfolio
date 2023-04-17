@@ -48,42 +48,64 @@ ul {
   transition: border-color 0.5s, background-color 0.25s, color 0.5s;
 }
 .black-button:hover,
-.black-button:focus {
+.black-button:focus-within {
   color: black;
   background-color: #fafafa;
   border: 2px solid black;
 }
 .card-1 {
   background-image: url(images/ciro-website.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-2 {
   background-image: url(images/hotsprings-project.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-3 {
   background-image: url(images/world-clock.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 .card-4 {
   background-image: url(images/weather-app.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 .card-5 {
   background-image: url(images/sailing-website.jpeg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 .card-6 {
   background-image: url(images/#);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  font-size: 14px;
 }
 
 .card-content {
@@ -101,13 +123,16 @@ ul {
   margin: 0 auto;
   max-width: 13rem;
 }
+.card-title {
+  margin-bottom: 5px;
+}
 
 .container {
   padding-left: 70px;
   padding-right: 70px;
   max-width: 75rem;
   margin: 0 auto;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .fa-desktop {
@@ -117,6 +142,16 @@ ul {
   font-size: 40px;
   margin-left: 8px;
 }
+
+.gallery-card {
+  transition: transform 500ms ease;
+}
+
+.gallery-card:hover,
+.gallery-card:focus-within {
+  transform: scale(1.05);
+}
+
 .introduction {
   min-width: 335px;
   margin: 0 auto;
@@ -158,6 +193,10 @@ ul {
   background-repeat: repeat-x;
   margin-top: -33px;
 }
+.project-cards a {
+  text-decoration: none;
+  color: black;
+}
 .project-descriptions h2 {
   font-family: "Libre Bodoni", serif;
 }
@@ -166,8 +205,8 @@ ul {
   width: fit-content;
 }
 .projects-title {
-  padding-top: 30px;
-  padding-bottom: 25px;
+  margin-bottom: 80px;
+  padding-bottom: 0;
 }
 .portrait-element {
   margin: 0 auto;
@@ -187,9 +226,10 @@ ul {
   padding-right: 70px;
   max-width: 75rem;
   margin: 0 auto;
-  border: 1px solid rgb(0, 255, 17);
+  /*border: 1px solid rgb(0, 255, 17);*/
 }
-#about {
+#about,
+#projects {
   padding-top: 90px;
   margin-top: -90px;
 }

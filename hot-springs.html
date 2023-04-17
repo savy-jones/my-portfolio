@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Hot Springs</title>
+  </head>
+  <style>
+    body {
+      background-color: #dbd5d0;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 36px;
+      font-stretch: extra-expanded;
+      margin: 10px 0px 10px 0px;
+    }
+    h2 {
+      text-align: center;
+      font-weight: 100;
+      font-size: 24px;
+      margin: 10px;
+    }
+    hr {
+      color: #5d5652;
+      border-width: 1px;
+
+      border-style: solid;
+      max-width: 400px;
+    }
+
+    img {
+      display: block;
+      margin: 0px auto 30px auto;
+      max-width: 100%;
+
+      border-radius: 10px;
+      box-shadow: 0px 1px 10px rgba(0 0 0 / 30%);
+    }
+
+    button {
+      display: block;
+      color: #fff9f4;
+      background-color: #282523;
+      border: none;
+      border-radius: 4px;
+      padding: 15px 25px;
+      margin: 30px auto;
+      font-size: 26px;
+      box-shadow: 0px 5px 10px rgba(0 0 0 / 40%);
+      transition: opacity 100ms ease-in-out;
+    }
+    a {
+      font-weight: lighter;
+      color: #373330;
+    }
+    .container {
+      background-color: #f9f4ee;
+      border-radius: 0px 0px 10px 10px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      max-width: 600px;
+      margin: 0px auto;
+      padding: 30px 40px 40px 40px;
+    }
+    .header {
+      background-color: #282523;
+      color: #fff9f4;
+      border-radius: 10px 10px 0px 0px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      max-width: 600px;
+      margin: 0px auto;
+      padding: 15px 40px;
+    }
+    .mailing-list {
+      text-align: center;
+      font-size: larger;
+      margin-top: 50px;
+    }
+    .footer {
+      text-align: center;
+      font-size: smaller;
+      color: #373330;
+      font-stretch: extra-expanded;
+      margin: 60px auto 0px;
+    }
+    button:hover {
+      opacity: 95%;
+      columns: white;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>Geothermal Hot Springs</h1>
+      <hr />
+      <h2>Scenic Views and Soothing Water</h2>
+    </div>
+    <div class="container">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/029/original/Image_1-22-23_at_11.56_AM.jpeg?1674414026"
+        alt="A woman standing on a rock in a steamy mountain hot spring."
+      />
+
+      <p>
+        There are many health benefits to bathing in natural hot springs. The
+        water, typically heated naturally from deep within the earth, contains
+        numerous minerals it picks up on the way up to the earth’s surface.
+      </p>
+      <p>
+        When you hear the word “spa”, what comes to mind? You may immediately
+        think of “relaxation, healing, and tranquility”, yet the term, whose
+        origins are rooted in the town of Spa, Belgium, literally means “health
+        through water”.
+      </p>
+      <p>
+        Soaking in a hot spring, whether it is primitive or developed, is one of
+        the best ways to feel renewed. These waters have been heated by
+        geothermal factors, typically measuring around 90-110°F (32-43° C) in
+        most of the baths.
+      </p>
+      <a
+        href="https://www.tophotsprings.com/hot-springs-water-health-benefits/"
+        target="_blank"
+      >
+        Read more about the healing benefits of natural hot springs.
+      </a>
+      <p class="mailing-list">
+        Click the button to get hot spring recommendations in your area.
+      </p>
+      <button>Hot Springs Near You</button>
+      <p class="footer">
+        This page was built by
+        <a href="mailto:savyjones@gmail.com ">Savana Jones</a>.
+      </p>
+    </div>
+    <script>
+      function mailList() {
+        let name = prompt("What is your name?");
+        let city = prompt("Where do you want to soak?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch soon with recommendations near " +
+            city +
+            "."
+        );
+      }
+
+      let hotspringsButton = document.querySelector("button");
+
+      hotspringsButton.addEventListener("click", mailList);
+    </script>
+  </body>
+</html>
