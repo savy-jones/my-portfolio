@@ -13,6 +13,10 @@ h1 {
   font-size: calc(2.375rem + 1.5vw);
   margin-bottom: 10px;
 }
+hr {
+  border: 1px solid white;
+  opacity: 0.4;
+}
 p {
   font-weight: 400;
 }
@@ -133,7 +137,7 @@ ul {
   padding-right: 70px;
   max-width: 75rem;
   margin: 0 auto;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 .fa-desktop {
@@ -145,12 +149,44 @@ ul {
 }
 
 .gallery-card {
+  position: relative;
   transition: transform 500ms ease;
 }
 
 .gallery-card:hover,
 .gallery-card:focus-within {
   transform: scale(1.05);
+}
+.gallery-img {
+  display: block;
+  width: 100%;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.gallery-blur img {
+  filter: blur(4px);
+}
+.gallery-overlay:hover {
+  opacity: 1;
+}
+.gallery-text {
+  width: 75%;
+  text-align: center;
+}
+.gallery-text p {
+  margin-bottom: 0;
 }
 
 .introduction {
@@ -230,7 +266,7 @@ ul {
   padding-right: 70px;
   max-width: 75rem;
   margin: 0 auto;
-  /*border: 1px solid rgb(0, 255, 17);*/
+  border: 1px solid rgb(0, 255, 17);
 }
 #about,
 #projects {
