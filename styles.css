@@ -130,6 +130,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 400px;
 }
 
 .social-links a {
@@ -364,7 +365,7 @@ ul {
   }
 }
 @media only screen and (max-width: 600px) {
-  .social-links a {
-    width: 100px;
+  .social-links {
+    max-width: 400px;
   }
 }
