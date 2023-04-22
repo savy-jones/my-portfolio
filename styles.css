@@ -118,6 +118,7 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .contact-buttons div {
   background: #c4a8dc;
@@ -129,6 +130,7 @@ ul {
   outline: 1px solid rgb(40, 27, 216);
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .social-links a {
@@ -360,5 +362,25 @@ ul {
   .navbar .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .social-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .social-links > div {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+
+  .social-links > div:last-child {
+    margin-right: 0;
   }
 }
