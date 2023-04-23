@@ -7,8 +7,10 @@
 
     <meta
       name="description"
-      content=" 💫 Savana Jones is a digital accessibility specialist and front-end developer based in the United States. Check out her projects and contact her for inquiries."
+      content=" 💫 Savana Jones is a digital accessibility specialist and front-end developer based in the United States. Learn more about Savana, check out her projects, and contact her for inquiries."
     />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script
       src="https://kit.fontawesome.com/7fc77ac1a9.js"
@@ -42,7 +44,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/index.html"
+        <a class="navbar-brand" href="/index.html" title="Home Page"
           ><span id="smiley">☺︎</span> Savana Jones</a
         >
         <button
@@ -59,19 +61,35 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/index.html"
+                title="Home Page"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/index.html#about">About Me</a>
+              <a class="nav-link" href="/index.html#about" title="About Savana"
+                >About Me</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/index.html#projects">Projects</a>
+              <a
+                class="nav-link"
+                href="/index.html#projects"
+                title="Savana's Work"
+                >Projects</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/index.html#contact">Contact</a>
+              <a
+                class="nav-link"
+                href="/index.html#contact"
+                title="Contact Savana"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -381,10 +399,8 @@
       </div>
     </div>
     <script>
-      $(document).ready(function () {
-        $(".navbar-nav>li>a").on("click", function () {
-          $(".navbar-collapse").collapse("hide");
-        });
+      $(".navbar-nav>li>a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
       });
     </script>
   </body>
