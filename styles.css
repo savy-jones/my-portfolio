@@ -1,5 +1,6 @@
 :root {
   --highlight-color: blueviolet;
+  --link-hover-color: rgb(248, 21, 134);
 }
 
 body {
@@ -21,10 +22,10 @@ p {
   font-weight: 400;
 }
 a {
-  color: blueviolet;
+  color: var(--highlight-color);
 }
 a:hover {
-  color: #a96bdb;
+  color: var(--link-hover-color);
   cursor: pointer;
 }
 ul {
@@ -37,7 +38,7 @@ ul {
 .contact-title {
   background: #e8e7e5;
   margin-bottom: 30px;
-  padding: 25px 0px 15px;
+  padding: 60px 0px;
 }
 
 .black-button {
@@ -51,12 +52,11 @@ ul {
 }
 .black-button:hover,
 .black-button:focus-within {
-  color: black;
+  color: var(--highlight-color);
   background-color: #fafafa;
-  border: 2px solid black;
+  border: 2px solid var(--highlight-color);
 }
 
-/* Icon Grow */
 .hvr-icon-grow {
   display: inline-block;
   vertical-align: middle;
@@ -91,8 +91,8 @@ ul {
   font-size: larger;
   background-color: #e8e7e5;
   border: 2px solid black;
-  padding: 14px 0;
-  margin-bottom: 20px;
+  border-radius: 0.375rem;
+  padding: 7px 0;
   transition: all 0.5s;
 }
 .footer-button:hover,
@@ -110,32 +110,30 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 65px 0;
+  background-color: #ccc8c8;
 }
 
 .contact-buttons {
   text-align: center;
-  outline: 1px solid rgb(40, 27, 216);
+
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 .contact-buttons div {
-  background: #c4a8dc;
-  border: solid;
   padding: 5px 20px;
 }
 .social-links {
   text-align: center;
-  outline: 1px solid rgb(40, 27, 216);
+
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
 }
 
 .social-links a {
-  background: #c4a8dc;
-  border: solid;
   padding: 5px 20px;
 }
 
@@ -161,7 +159,6 @@ ul {
   padding-right: 70px;
   max-width: 75rem;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .fa-desktop {
@@ -171,7 +168,9 @@ ul {
   font-size: 40px;
   margin-left: 8px;
 }
-
+.gallery {
+  margin-bottom: 200px;
+}
 .gallery-card {
   position: relative;
 
@@ -305,7 +304,6 @@ ul {
   padding-right: 70px;
   max-width: 75rem;
   margin: 0 auto;
-  border: 1px solid rgb(0, 255, 17);
 }
 #about,
 #projects,
@@ -364,23 +362,11 @@ ul {
     padding-right: 20px;
   }
 }
-@media (max-width: 576px) {
-  .contact-section {
-    flex-direction: column;
-  }
 
-  .social-links {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .social-links > div {
-    flex: 0 0 auto;
-    margin-right: 10px;
-  }
-
-  .social-links > div:last-child {
-    margin-right: 0;
+@media (max-width: 865px) {
+  .footer-button {
+    margin-bottom: 20px;
+    width: 242px;
+    padding: 7px 0;
   }
 }
