@@ -346,7 +346,7 @@
         </div>
         <div>
           <a href="/index.html#about" class="footer-button"
-            ><span class="button-icons">✨</span> About Me</a
+            ><span class="button-icons text-shadow">✨</span> About Me</a
           >
         </div>
       </div>
@@ -380,5 +380,12 @@
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(".navbar-nav>li>a").on("click", function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+    </script>
   </body>
 </html>

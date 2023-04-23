@@ -1,6 +1,7 @@
 :root {
   --highlight-color: blueviolet;
   --link-hover-color: rgb(248, 21, 134);
+  --page-primary-color: #e8e7e5;
 }
 
 body {
@@ -36,7 +37,7 @@ ul {
 .about-title,
 .projects-title,
 .contact-title {
-  background: #e8e7e5;
+  background: var(--page-primary-color);
   margin-bottom: 30px;
   padding: 60px 0px;
 }
@@ -110,8 +111,10 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 65px 0;
+  padding: 55px 0;
   background-color: #ccc8c8;
+  border-top: 7px dotted black;
+  border-bottom: 14px solid black;
 }
 
 .contact-buttons {
@@ -127,7 +130,6 @@ ul {
 }
 .social-links {
   text-align: center;
-
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -141,8 +143,9 @@ ul {
   text-decoration: none;
 }
 .contact-section a:hover {
-  color: blueviolet;
+  color: var(--highlight-color);
 }
+
 .fa-envelope,
 .fa-linkedin-in,
 .fa-github {
@@ -286,7 +289,6 @@ ul {
 }
 .projects-title {
   margin-bottom: 80px;
-  padding-bottom: 15px;
 }
 .portrait-element {
   margin: 0 auto;
@@ -297,6 +299,9 @@ ul {
   height: 420px;
   width: 100%;
   mix-blend-mode: lighten;
+}
+.text-shadow {
+  text-shadow: rgb(0, 0, 0) 0 0 1px;
 }
 
 .title-container {
@@ -368,5 +373,11 @@ ul {
     margin-bottom: 20px;
     width: 242px;
     padding: 7px 0;
+  }
+  .social-links {
+    margin-top: 30px;
+  }
+  .title-container {
+    text-align: center;
   }
 }
